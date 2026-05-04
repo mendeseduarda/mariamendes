@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maria Eduarda Mendes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+<!-- Language Toggle -->
+<div id="lang-toggle">
+  <button class="active" onclick="setLang('pt')">PT</button>
+  <button onclick="setLang('en')">EN</button>
+</div>
+
+<!-- Nav -->
+<nav>
+  <ul>
+    <li><a href="#about"   data-pt="sobre"      data-en="about">sobre</a></li>
+    <!--- <li><a href="#goals"   data-pt="horizonte"  data-en="horizon">horizonte</a></li> --->
+    <li><a href="#exp"     data-pt="experiência" data-en="experience">experiência</a></li>
+    <li><a href="#projects" data-pt="projetos"  data-en="projects">projetos</a></li>
+    <li><a href="#papers"  data-pt="Artigos"     data-en="papers">Artigos</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<div class="container">
+  <section id="hero">
+    <div class="hero-grid">
+
+      <!-- Photo -->
+      <div class="photo-wrap fade-up">
+        <div class="photo-frame">
+        <img src="imagens/mariamendes.jpeg" alt="Maria Eduarda Mendes"> 
+        </div>
+        <p class="photo-label">Maria Eduarda Mendes</p>
+      </div>
+
+      <!-- Text -->
+      <div class="hero-text">
+        <p class="hero-subtitle fade-up delay-1" data-pt="Ciência da Computação · UTFPR · 2º período" data-en="Computer Science · UTFPR · 1nd year">Ciência da Computação · UTFPR · 2º período</p>
+        <h1 class="fade-up delay-2">
+          Olá, eu sou<br>
+          <em>Maria Eduarda Mendes.</em>
+        </h1>
+        <p class="hero-desc fade-up delay-3" data-pt="Estudante de computação, pesquisadora em formação e entusiasta de dados. Atualmente investigando qualidade de dados." data-en="Computer science student, researcher in training and data enthusiast. Currently investigating data quality.">
+          Estudante de computação, pesquisadora em formação e entusiasta de dados. Atualmente investigando qualidade de dados.
+        </p>
+
+        <!-- Socials -->
+        <div class="socials fade-up delay-4">
+          <a href="https://www.linkedin.com/in/mendeseduarda" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.999V9h3.108v1.561h.046c.432-.821 1.489-1.686 3.065-1.686 3.28 0 3.883 2.159 3.883 4.967v6.61zM5.337 7.433a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm1.555 13.019H3.782V9h3.11v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/mendeseduarda" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <!-- 
+          <a href="https://twitter.com" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter / X
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            YouTube
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            Instagram
+          </a>
+          <a href="https://scholar.google.com" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+            Scholar
+          </a>
+          <a href="https://lattes.cnpq.br" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+            Lattes
+          </a>
+          -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll down indicator -->
+    <div class="scroll-down">
+      <a href="#about" aria-label="Role para baixo">
+        <span class="scroll-text" data-pt="Role para baixo" data-en="Scroll down">Role para baixo</span>
+        <svg class="scroll-arrow" viewBox="0 0 24 24"><path d="M12 16.5l-6-6 1.41-1.41L12 13.67l4.59-4.58L18 10.5z"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <section id="about">
+    <span class="section-tag" data-pt="// sobre mim" data-en="// about me">// sobre mim</span>
+    <h2 class="section-title" data-pt="Quem sou eu?" data-en="Who am I?">Quem sou eu?</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-pt="Tenho 19 anos e sou estudante de Ciência da Computação no 2º período da UTFPR, onde também concluí o Ensino Médio Técnico Integrado em Informática. Desde cedo desenvolvi uma relação próxima com a tecnologia " data-en="I'm 19 years old and a 1nd Computer Science student at UTFPR, where I also completed my Integrated Technical High School in Informatics. I developed a close relationship with technology early on.">
+          Tenho 19 anos e sou estudante de Ciência da Computação no 2º período da UTFPR, onde também concluí o Ensino Médio Técnico Integrado em Informática. Desde cedo desenvolvi uma relação próxima com a tecnologia.
+        </p>
+        <p data-pt="Atualmente integro um grupo de pesquisa na área de qualidade de dados, tema que tem me dado as primeiras perguntas da minha vida acadêmica. Meu repertório técnico inclui Java, C, C++ e Python como linguagens principais, além de TypeScript, JavaScript, HTML e CSS para desenvolvimento front-end, e SQL para banco de dados." data-en="I'm currently part of a research group focused on data quality — a field that has given me my first academic questions. My technical stack includes Java, C, C++ and Python as primary languages, plus TypeScript, JavaScript, HTML and CSS for front-end development, and SQL for databases.">
+          Atualmente integro um grupo de pesquisa na área de qualidade de dados, tema que tem me dado as primeiras perguntas da minha vida acadêmica. Meu repertório técnico inclui Java, C, C++ e Python como linguagens principais, além de TypeScript, JavaScript, HTML e CSS para desenvolvimento front-end, e SQL para banco de dados.
+        </p>
+        <p data-pt="Fora da computação, gosto de futebol pricipalmente do meu time Palmeiras!!, acompanho a Fórmula 1, ouço Olivia Rodrigo em loop e gosto de desenhos animados." data-en="Outside of computing, I love football especially my team Palmeiras, follow Formula 1, listen to Olivia Rodrigo on repeat and love a good cartoon.">
+          Fora da computação, gosto de futebol pricipalmente do meu time Palmeiras!!, acompanho a Fórmula 1, ouço Olivia Rodrigo em loop e gosto de desenhos animados.
+        </p>
+      </div>
+
+      <div class="about-aside">
+        <div class="aside-block">
+          <p class="label" data-pt="Foco atual" data-en="Current focus">Foco atual</p>
+          <p data-pt="Pesquisa em qualidade de dados" data-en="Research in data quality">Pesquisa em qualidade de dados</p>
+        </div>
+        <div class="aside-block">
+          <p class="label" data-pt="Linguagens (principais)" data-en="Languages (main)">Linguagens (principais)</p>
+          <div class="tag-list">
+            <span class="tag strong">Java</span>
+            <span class="tag strong">C</span>
+            <span class="tag strong">C++</span>
+            <span class="tag strong">Python</span>
+          </div>
+        </div>
+        <div class="aside-block">
+          <p class="label" data-pt="Front-end & BD" data-en="Front-end & DB">Front-end & BD</p>
+          <div class="tag-list">
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="aside-block">
+          <p class="label" data-pt="Formação" data-en="Education">Formação</p>
+          <p data-pt="B.Sc. Ciência da Computação — UTFPR (em curso)" data-en="B.Sc. Computer Science — UTFPR (in progress)">B.Sc. Ciência da Computação — UTFPR (em curso)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════ GOALS / HORIZON ═══════════════════════════ 
+  <section id="goals">
+    <span class="section-tag" data-pt="// horizonte" data-en="// horizon">// horizonte</span>
+    <h2 class="section-title" data-pt="Para onde estou indo" data-en="Where I'm heading">Para onde estou indo</h2>
+
+    <div class="horizons-grid">
+      <div class="horizon-card">
+        <div class="horizon-num">01</div>
+        <div>
+          <h3 data-pt="Pesquisa de verão internacional" data-en="International summer research">Pesquisa de verão internacional</h3>
+          <p data-pt="Ainda durante a graduação, quero participar de programas de estágio de pesquisa de verão em universidades fora do Brasil — uma forma de me expor a ambientes de pesquisa de alto nível e construir redes internacionais desde cedo." data-en="While still in undergrad, I want to take part in summer research internship programs at universities abroad — a way to experience high-level research environments and build international networks from the start.">
+            Ainda durante a graduação, quero participar de programas de estágio de pesquisa de verão em universidades fora do Brasil — uma forma de me expor a ambientes de pesquisa de alto nível e construir redes internacionais desde cedo.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizon-card">
+        <div class="horizon-num">02</div>
+        <div>
+          <h3 data-pt="Publicações científicas na graduação" data-en="Scientific publications during undergrad">Publicações científicas na graduação</h3>
+          <p data-pt="Quero publicar artigos antes de concluir a graduação. Entendo que estou no começo desta jornada, mas acredito que expor ideias ao rigor da revisão por pares é essencial para crescer como pesquisadora." data-en="I want to publish papers before finishing my degree. I understand I'm at the beginning of this journey, but I believe that submitting ideas to the rigor of peer review is essential to growing as a researcher.">
+            Quero publicar artigos antes de concluir a graduação. Entendo que estou no começo desta jornada, mas acredito que expor ideias ao rigor da revisão por pares é essencial para crescer como pesquisadora.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizon-card">
+        <div class="horizon-num">03</div>
+        <div>
+          <h3 data-pt="Doutorado — MIT e grandes laboratórios" data-en="PhD — MIT and top research labs">Doutorado — MIT e grandes laboratórios</h3>
+          <p data-pt="Mantenho notas altas como parte de um plano maior: um doutorado em uma instituição de pesquisa de ponta — com o MIT no topo da lista. Quero estar preparada para competir pelas melhores oportunidades." data-en="I keep my grades high as part of a bigger plan: a PhD at a leading research institution — with MIT at the top of my list. I want to be ready to compete for the best opportunities.">
+            Mantenho notas altas como parte de um plano maior: um doutorado em uma instituição de pesquisa de ponta — com o MIT no topo da lista. Quero estar preparada para competir pelas melhores oportunidades.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizon-card">
+        <div class="horizon-num">04</div>
+        <div>
+          <h3 data-pt="Dados, neurociência e impacto real" data-en="Data, neuroscience & real impact">Dados, neurociência e impacto real</h3>
+          <p data-pt="Tenho proximidade com a área de dados e uma curiosidade crescente por neurociência computacional. Quero desenvolver algo que conecte essas duas áreas e que possa impactar diretamente o mundo — pesquisa que sai do papel e chega às pessoas." data-en="I'm close to the data field and have a growing curiosity about computational neuroscience. I want to build something that connects these two areas and has a direct impact on the world — research that leaves the page and reaches people.">
+            Tenho proximidade com a área de dados e uma curiosidade crescente por neurociência computacional. Quero desenvolver algo que conecte essas duas áreas e que possa impactar diretamente o mundo — pesquisa que sai do papel e chega às pessoas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+
+  <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+  <section id="exp">
+    <span class="section-tag" data-pt="// experiência" data-en="// experience">// experiência</span>
+    <h2 class="section-title" data-pt="Trajetória profissional" data-en="Professional path">Trajetória profissional</h2>
+
+    <div class="timeline">
+
+      <!-- Current -->
+      <div class="tl-item current">
+        <p class="tl-meta">2026 — <span data-pt="presente" data-en="present">presente</span></p>
+        <h3 data-pt="Iniciação Científica (IC)— Qualidade de Dados" data-en="Undergraduate Researcher — Data Quality">Iniciação Científica (IC) — Qualidade de Dados</h3>
+        <p class="company">UTFPR</p>
+        <p data-pt="Integro um grupo de pesquisa investigando problemas de qualidade de dados." data-en="I'm part of a research group investigating data quality problems.">
+          Integro um grupo de pesquisa investigando problemas de qualidade de dados.
+        </p>
+      </div>
+
+      <!-- Tyto Dev Jr -->
+      <div class="tl-item">
+        <p class="tl-meta">Mai — Dez 2025</p>
+        <h3 data-pt="Desenvolvedora Web Júnior" data-en="Junior Web Developer">Desenvolvedora Web Júnior</h3>
+        <p class="company">TytoTech</p>
+        <p data-pt="TytoTech é uma empresa pequena de desenvolvimento de software especializada em soluções web sob medida para pequenos e médios negócios. Como desenvolvedora júnior, participei da construção de interfaces e da integração com APIs, consolidando minha experiência full-stack em ambiente profissional." data-en="TytoTech is a small software development company specializing in tailor-made web solutions for small and medium businesses. As a junior developer, I took part in building interfaces and integrating with APIs, consolidating my full-stack experience in a professional setting.">
+          TytoTech é uma empresa pequena de desenvolvimento de software especializada em soluções web sob medida para pequenos e médios negócios. Como desenvolvedora júnior, participei da construção de interfaces e da integração com APIs, consolidando minha experiência full-stack em ambiente profissional.
+        </p>
+      </div>
+
+      <!-- Tyto intern -->
+      <div class="tl-item">
+        <p class="tl-meta">Jun — Nov 2024</p>
+        <h3 data-pt="Estágio — Desenvolvimento Web" data-en="Internship — Web Development">Estágio — Desenvolvimento Web</h3>
+        <p class="company">TytoTech</p>
+        <p data-pt="Primeiro contato com desenvolvimento web em ambiente de produção. Contribuí para projetos reais de front-end, aplicando HTML, CSS, JavaScript e TypeScript sob orientação de desenvolvedores seniores." data-en="First contact with web development in a production environment. I contributed to real front-end projects, applying HTML, CSS, JavaScript and TypeScript under the guidance of senior developers.">
+          Primeiro contato com desenvolvimento web em ambiente de produção. Contribuí para projetos reais de front-end, aplicando HTML, CSS, JavaScript e TypeScript sob orientação de desenvolvedores seniores.
+        </p>
+      </div>
+
+      <!-- Coamo -->
+      <div class="tl-item">
+        <p class="tl-meta">Jun — Dez 2023</p>
+        <h3 data-pt="Estágio — Manutenção de Computadores" data-en="Internship — Computer Maintenance">Estágio — Manutenção de Computadores</h3>
+        <p class="company">Coamo Agroindustrial</p>
+        <p data-pt="Suporte técnico e manutenção preventiva e corretiva de equipamentos de informática em um dos maiores complexos agroindustriais do Brasil. Experiência que consolidou fundamentos de hardware e infraestrutura de TI." data-en="Technical support and preventive/corrective maintenance of IT equipment at one of the largest agroindustrial complexes in Brazil. An experience that solidified hardware and IT infrastructure fundamentals.">
+          Suporte técnico e manutenção preventiva e corretiva de equipamentos de informática em um dos maiores complexos agroindustriais do Brasil. Experiência que consolidou fundamentos de hardware e infraestrutura de TI.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════ PROJECTS (placeholder) ═══════════════════════════ -->
+  <section id="projects">
+    <span class="section-tag" data-pt="// projetos" data-en="// projects">// projetos</span>
+    <h2 class="section-title" data-pt="Projetos" data-en="Projects">Projetos</h2>
+    <p style="font-size:.9rem; opacity:.6; font-weight:300; margin-bottom:2rem;"
+       data-pt="Em breve — projetos a caminho." data-en="Coming soon — projects on the way. Check out my GitHub ">
+      Em breve — projetos a caminho. Veja meu github.
+    </p>
+
+    <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  PROJETOS — descomente e preencha quando tiver       ║
+    ╚══════════════════════════════════════════════════════╝
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="placeholder-corner"></div>
+        <p class="placeholder-label">2025</p>
+        <p class="placeholder-title">Nome do Projeto</p>
+      </div>
+      <div class="project-card">
+        <div class="placeholder-corner"></div>
+        <p class="placeholder-label">2025</p>
+        <p class="placeholder-title">Nome do Projeto</p>
+      </div>
+      <div class="project-card">
+        <div class="placeholder-corner"></div>
+        <p class="placeholder-label">2025</p>
+        <p class="placeholder-title">Nome do Projeto</p>
+      </div>
+    </div>
+    -->
+
+    <!-- placeholder visual -->
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="placeholder-corner"></div>
+        <p class="placeholder-label" data-pt="em breve" data-en="coming soon">em breve</p>
+        <p class="placeholder-title" data-pt="Projeto 01" data-en="Project 01">Projeto 01</p>
+      </div>
+      <div class="project-card">
+        <div class="placeholder-corner"></div>
+        <p class="placeholder-label" data-pt="em breve" data-en="coming soon">em breve</p>
+        <p class="placeholder-title" data-pt="Projeto 02" data-en="Project 02">Projeto 02</p>
+      </div>
+      <div class="project-card">
+        <div class="placeholder-corner"></div>
+        <p class="placeholder-label" data-pt="em breve" data-en="coming soon">em breve</p>
+        <p class="placeholder-title" data-pt="Projeto 03" data-en="Project 03">Projeto 03</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════ PAPERS (placeholder) ═══════════════════════════ -->
+  <section id="papers">
+    <span class="section-tag" data-pt="// publicações" data-en="// publications">// publicações</span>
+    <h2 class="section-title" data-pt="Artigos" data-en="Papers">Artigos</h2>
+    <p style="font-size:.9rem; opacity:.6; font-weight:300; margin-bottom:2rem;"
+       data-pt="Em breve — trabalhos a caminho." data-en="Coming soon — papers on the way.">
+      Em breve — trabalhos a caminho.
+    </p>
+
+    <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  PAPERS — descomente e preencha quando publicar      ║
+    ╚══════════════════════════════════════════════════════╝
+
+    <div class="papers-list">
+      <div class="paper-card">
+        <div class="paper-icon">§</div>
+        <div class="paper-text">
+          <p class="placeholder-label">Conferência · Ano</p>
+          <p>Título do artigo. Autores. Venue.</p>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- placeholder visual -->
+    <div class="papers-list">
+      <div class="paper-card">
+        <div class="paper-icon">§</div>
+        <div class="paper-text">
+          <p class="placeholder-label" data-pt="em breve" data-en="coming soon">em breve</p>
+          <p data-pt="Primeiro artigo a caminho…" data-en="First paper on the way…">Primeiro artigo a caminho…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer>
+    <p>Maria Eduarda Mendes · 2026</p>
+    
+  </footer>
+
+</div><!-- /container -->
+
+
+<script>
+  // ── Language switch ──
+  let currentLang = 'pt';
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('#lang-toggle button').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    });
+    document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+      el.textContent = el.getAttribute('data-' + lang);
+    });
+    // hero h1
+    if (lang === 'en') {
+      document.querySelector('#hero h1').innerHTML = "Hi, I'm<br><em>Maria Eduarda Mendes.</em>";
+    } else {
+      document.querySelector('#hero h1').innerHTML = "Olá, eu sou<br><em>Maria Eduarda.</em>";
+    }
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+  }
+
+  // ── Scroll-triggered fade-in for sections ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('section').forEach(s => {
+    s.style.opacity = '0';
+    s.style.transform = 'translateY(20px)';
+    s.style.transition = 'opacity .65s ease, transform .65s ease';
+    observer.observe(s);
+  });
+
+  // hero visible immediately
+  document.querySelector('#hero').style.opacity = '1';
+  document.querySelector('#hero').style.transform = 'none';
+</script>
+</body>
+</html>
