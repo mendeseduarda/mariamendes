@@ -1,0 +1,48 @@
+ <!-- ═══════════════════════════ GOALS / HORIZON ═══════════════════════════ 
+  <section id="goals">
+    <span class="section-tag" data-pt="// horizonte" data-en="// horizon">// horizonte</span>
+    <h2 class="section-title" data-pt="Para onde estou indo" data-en="Where I'm heading">Para onde estou indo</h2>
+
+    <div class="horizons-grid">
+      <div class="horizon-card">
+        <div class="horizon-num">01</div>
+        <div>
+          <h3 data-pt="Pesquisa de verão internacional" data-en="International summer research">Pesquisa de verão internacional</h3>
+          <p data-pt="Ainda durante a graduação, quero participar de programas de estágio de pesquisa de verão em universidades fora do Brasil — uma forma de me expor a ambientes de pesquisa de alto nível e construir redes internacionais desde cedo." data-en="While still in undergrad, I want to take part in summer research internship programs at universities abroad — a way to experience high-level research environments and build international networks from the start.">
+            Ainda durante a graduação, quero participar de programas de estágio de pesquisa de verão em universidades fora do Brasil — uma forma de me expor a ambientes de pesquisa de alto nível e construir redes internacionais desde cedo.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizon-card">
+        <div class="horizon-num">02</div>
+        <div>
+          <h3 data-pt="Publicações científicas na graduação" data-en="Scientific publications during undergrad">Publicações científicas na graduação</h3>
+          <p data-pt="Quero publicar artigos antes de concluir a graduação. Entendo que estou no começo desta jornada, mas acredito que expor ideias ao rigor da revisão por pares é essencial para crescer como pesquisadora." data-en="I want to publish papers before finishing my degree. I understand I'm at the beginning of this journey, but I believe that submitting ideas to the rigor of peer review is essential to growing as a researcher.">
+            Quero publicar artigos antes de concluir a graduação. Entendo que estou no começo desta jornada, mas acredito que expor ideias ao rigor da revisão por pares é essencial para crescer como pesquisadora.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizon-card">
+        <div class="horizon-num">03</div>
+        <div>
+          <h3 data-pt="Doutorado — MIT e grandes laboratórios" data-en="PhD — MIT and top research labs">Doutorado — MIT e grandes laboratórios</h3>
+          <p data-pt="Mantenho notas altas como parte de um plano maior: um doutorado em uma instituição de pesquisa de ponta — com o MIT no topo da lista. Quero estar preparada para competir pelas melhores oportunidades." data-en="I keep my grades high as part of a bigger plan: a PhD at a leading research institution — with MIT at the top of my list. I want to be ready to compete for the best opportunities.">
+            Mantenho notas altas como parte de um plano maior: um doutorado em uma instituição de pesquisa de ponta — com o MIT no topo da lista. Quero estar preparada para competir pelas melhores oportunidades.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizon-card">
+        <div class="horizon-num">04</div>
+        <div>
+          <h3 data-pt="Dados, neurociência e impacto real" data-en="Data, neuroscience & real impact">Dados, neurociência e impacto real</h3>
+          <p data-pt="Tenho proximidade com a área de dados e uma curiosidade crescente por neurociência computacional. Quero desenvolver algo que conecte essas duas áreas e que possa impactar diretamente o mundo — pesquisa que sai do papel e chega às pessoas." data-en="I'm close to the data field and have a growing curiosity about computational neuroscience. I want to build something that connects these two areas and has a direct impact on the world — research that leaves the page and reaches people.">
+            Tenho proximidade com a área de dados e uma curiosidade crescente por neurociência computacional. Quero desenvolver algo que conecte essas duas áreas e que possa impactar diretamente o mundo — pesquisa que sai do papel e chega às pessoas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
