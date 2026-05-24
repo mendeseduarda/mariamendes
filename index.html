@@ -25,7 +25,7 @@
     <!--- <li><a href="#goals"   data-pt="horizonte"  data-en="horizon">horizonte</a></li> --->
     <li><a href="#exp"     data-pt="experiência" data-en="experience">experiência</a></li>
     <li><a href="#projects" data-pt="projetos"  data-en="projects">projetos</a></li>
-    <li><a href="#papers"  data-pt="Artigos"     data-en="papers">Artigos</a></li>
+   <!--<li><a href="#papers"  data-pt="Artigos"     data-en="papers">Artigos</a></li> -->
   </ul>
 </nav>
 
@@ -257,43 +257,7 @@
   </section>
 
 
-  <!-- ═══════════════════════════ PAPERS (placeholder) ═══════════════════════════ -->
-  <section id="papers">
-    <span class="section-tag" data-pt="// publicações" data-en="// publications">// publicações</span>
-    <h2 class="section-title" data-pt="Artigos" data-en="Papers">Artigos</h2>
-    <p style="font-size:.9rem; opacity:.6; font-weight:300; margin-bottom:2rem;"
-       data-pt="Em breve — trabalhos a caminho." data-en="Coming soon — papers on the way.">
-      Em breve — trabalhos a caminho.
-    </p>
-
-    <!--
-    ╔══════════════════════════════════════════════════════╗
-    ║  PAPERS — descomente e preencha quando publicar      ║
-    ╚══════════════════════════════════════════════════════╝
-
-    <div class="papers-list">
-      <div class="paper-card">
-        <div class="paper-icon">§</div>
-        <div class="paper-text">
-          <p class="placeholder-label">Conferência · Ano</p>
-          <p>Título do artigo. Autores. Venue.</p>
-        </div>
-      </div>
-    </div>
-    -->
-
-    <!-- placeholder visual -->
-    <div class="papers-list">
-      <div class="paper-card">
-        <div class="paper-icon">§</div>
-        <div class="paper-text">
-          <p class="placeholder-label" data-pt="em breve" data-en="coming soon">em breve</p>
-          <p data-pt="Primeiro artigo a caminho…" data-en="First paper on the way…">Primeiro artigo a caminho…</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
 
   <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
   <footer>
@@ -345,6 +309,18 @@
   // hero visible immediately
   document.querySelector('#hero').style.opacity = '1';
   document.querySelector('#hero').style.transform = 'none';
+
+  // ── Navbar: pequena escurecida ao rolar ──
+  (function() {
+    const nav = document.querySelector('nav');
+    if (!nav) return;
+    const onScroll = () => {
+      if (window.scrollY > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
 </script>
 </body>
 </html>

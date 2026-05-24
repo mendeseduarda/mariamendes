@@ -59,6 +59,7 @@
       padding: 1.2rem 2rem;
       z-index: 50;
       mix-blend-mode: normal;
+      transition: background-color 180ms ease, box-shadow 180ms ease;
     }
     nav ul {
       display: flex;
@@ -523,3 +524,11 @@
       .about-grid { grid-template-columns: 1fr; }
       nav ul { gap: 1.2rem; }
     }
+
+/* pequena escurecida ao rolar (só um pouquinho) */
+nav.scrolled {
+  /* opaco e levemente mais escuro que o fundo (sem transparência) */
+  background-color: #efece7;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(10,39,205,0.04);
+}
