@@ -368,10 +368,17 @@
       opacity: .78;
     }
 
-    /* ── Projects (placeholder) ── */
+    /* ── Projects ── */
+    .projects-intro {
+      max-width: 620px;
+      font-size: .9rem;
+      opacity: .68;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.4rem;
     }
     .project-card {
@@ -386,18 +393,104 @@
       position: relative;
       transition: border-color .25s;
     }
-    .project-card:hover { border-color: var(--pink); }
-    .project-card .placeholder-label {
+    .project-card--available {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
+      gap: 0;
+      padding: 0;
+      overflow: hidden;
+      border-style: solid;
+      border-color: rgba(10,39,205,.45);
+      background: rgba(255,255,255,.18);
+      cursor: pointer;
+      transition: border-color .25s, transform .25s, box-shadow .25s;
+    }
+    .project-card--available:hover,
+    .project-card--available:focus-visible {
+      border-color: var(--blue);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(10,39,205,.08);
+      outline: none;
+    }
+    .project-image {
+      width: 100%;
+      height: 100%;
+      min-height: 250px;
+      object-fit: cover;
+      display: block;
+      border-right: 1px solid rgba(10,39,205,.18);
+    }
+    .project-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.6rem;
+    }
+    .project-status {
       font-family: 'Space Mono', monospace;
       font-size: .62rem;
       letter-spacing: .1em;
       color: var(--muted);
       text-transform: uppercase;
     }
-    .project-card .placeholder-title {
+    .project-title {
       font-family: 'DM Serif Display', serif;
       font-size: 1.1rem;
-      color: rgba(10,39,205,.3);
+      font-weight: 400;
+    }
+    .project-card--available .project-status {
+      color: rgba(10,39,205,.72);
+    }
+    .project-card--available .project-title {
+      color: var(--blue);
+      font-size: 1.5rem;
+    }
+    .project-description {
+      color: rgba(10,39,205,.82);
+      font-size: .88rem;
+      font-weight: 300;
+      line-height: 1.55;
+    }
+    .project-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: .45rem;
+      margin-top: .65rem;
+    }
+    .project-more,
+    .project-link,
+    .modal-project-link {
+      font-family: 'Space Mono', monospace;
+      font-size: .62rem;
+      letter-spacing: .04em;
+    }
+    .project-more { color: rgba(10,39,205,.68); }
+    .project-link,
+    .modal-project-link {
+      color: var(--blue);
+      text-underline-offset: 3px;
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      text-decoration-thickness: 1.5px;
+      transition: color .2s, text-decoration-color .2s;
+    }
+    .project-link:hover,
+    .project-link:focus-visible,
+    .modal-project-link:hover,
+    .modal-project-link:focus-visible {
+      color: #061a9e;
+      text-decoration-color: var(--pink);
+    }
+    .project-card--coming-soon {
+      color: rgba(10,39,205,.28);
+      opacity: .72;
+    }
+    .project-card--coming-soon .project-status,
+    .project-card--coming-soon .project-title {
+      color: inherit;
     }
     .project-card .placeholder-corner {
       position: absolute;
@@ -405,6 +498,82 @@
       width: 28px; height: 28px;
       border-top: 2px solid var(--blush);
       border-right: 2px solid var(--blush);
+    }
+
+    /* ── Project modal ── */
+    body.modal-open { overflow: hidden; }
+    .project-modal[hidden] { display: none; }
+    .project-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+    }
+    .project-modal__backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(4,14,70,.54);
+      backdrop-filter: blur(5px);
+    }
+    .project-modal__panel {
+      position: relative;
+      z-index: 1;
+      width: min(880px, 100%);
+      max-height: calc(100vh - 3rem);
+      overflow-y: auto;
+      border: 1.5px solid var(--blue);
+      border-radius: 8px;
+      background: var(--bg);
+      box-shadow: 0 24px 70px rgba(4,14,70,.28);
+    }
+    .project-modal__close {
+      position: absolute;
+      top: .8rem;
+      right: .8rem;
+      z-index: 2;
+      width: 2.2rem;
+      height: 2.2rem;
+      border: 1px solid rgba(10,39,205,.25);
+      border-radius: 50%;
+      background: var(--bg);
+      color: var(--blue);
+      font-size: 1.35rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .project-modal__close:hover,
+    .project-modal__close:focus-visible {
+      background: var(--blue);
+      color: var(--bg);
+      outline: none;
+    }
+    .project-modal__media {
+      padding: 2rem 2rem 0;
+    }
+    .project-modal__media img {
+      display: block;
+      width: 100%;
+      max-height: 430px;
+      object-fit: contain;
+      border: 1px solid rgba(10,39,205,.15);
+      border-radius: 5px;
+      background: #edf5f8;
+    }
+    .project-modal__content { padding: 1.6rem 2rem 2rem; }
+    .project-modal__content h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      line-height: 1.1;
+      margin: .35rem 0 .7rem;
+    }
+    .project-modal__content > p:not(.project-status) {
+      max-width: 720px;
+      font-size: .93rem;
+      font-weight: 300;
+      opacity: .82;
+      margin-bottom: 1.1rem;
     }
 
     /* ── Papers (placeholder) ── */
@@ -523,6 +692,22 @@
       .photo-frame { width: 160px; height: 195px; }
       .about-grid { grid-template-columns: 1fr; }
       nav ul { gap: 1.2rem; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .project-card--available {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+      }
+      .project-image {
+        min-height: 190px;
+        aspect-ratio: 16 / 9;
+        border-right: 0;
+        border-bottom: 1px solid rgba(10,39,205,.18);
+      }
+      .project-modal { padding: .75rem; }
+      .project-modal__panel { max-height: calc(100vh - 1.5rem); }
+      .project-modal__media { padding: 3.4rem 1rem 0; }
+      .project-modal__content { padding: 1.2rem 1rem 1.5rem; }
+      .project-modal__content h2 { font-size: 1.65rem; }
     }
 
 /* pequena escurecida ao rolar (só um pouquinho) */
